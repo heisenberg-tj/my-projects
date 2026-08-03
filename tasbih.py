@@ -18,7 +18,7 @@ while True:
             counter = 0
             stage = 3
     elif stage == 3:
-        print("Аллаху Акбар!")
+        print(f"Вы сказали Аллаху Акбар {counter} раза.")
         if counter == 33:
             print("Машаллах! Вы сказали 33 раза Аллаху Акбар! Хорошего дня вам!")
             break
