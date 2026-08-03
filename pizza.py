@@ -14,8 +14,8 @@ while True:
         print("Не спамьте! Подождите 3 секунды!")
         time.sleep(3)
         continue
+    last_action_time = current_time
     if a.lower() == "пепперони":
-        current_time = last_action_time
         if balance >= 100:
             balance = balance - 100
             print(f"Мы добавили в ваш заказ пиццу Пепперони! На вашем счёте {balance}")
@@ -23,7 +23,6 @@ while True:
         else:
              print("Недостаточно средств!")
     elif a.lower() == "маргарита":
-        current_time = last_action_time
         if balance >= 130:
             print("Мы добавили в ваш заказ пиццу Маргарита! с вашего банковского счёте снялось 130 сомони!")
             balance = balance - 130
@@ -31,8 +30,7 @@ while True:
             cart.append("Пицца Маргарита.")
         else:
              print("Недостаточно средств!")
-    elif a.lower() in ["Пицца четыре сыра", "сыр", "четыре"]:
-        current_time = last_action_time
+    elif a.lower() in ["пицца четыре сыра", "сыр", "четыре"]:
         if balance >= 150:
             balance = balance - 150
             print(f"В ваш заказ добавлен пицца четыре сыра. Ваш баланс {balance}")
