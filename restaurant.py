@@ -11,7 +11,7 @@ while True:
     elif answer.lower() == "паста":
         a = input("Подтвержадете оплату?(Да/Нет): ")
         if a.lower() == "да":
-            if balance <= 150:
+            if balance < 150:
                 print("Недостаточно средств.")
                 continue
             balance = balance - 150
@@ -22,7 +22,7 @@ while True:
     elif answer.lower() == "пицца":
         a = input("Подтверджаете оплату?(Да/Нет): ")
         if a.lower() == "да":
-            if balance <= 100:
+            if balance < 100:
                 print("Недостаточно средств.")
                 continue
             balance = balance - 100
@@ -30,7 +30,7 @@ while True:
     elif answer.lower() == "бургер":
         a = input("Подтверждаете оплату?(Да/Нет): ")
         if a.lower() == "да":
-            if balance <= 50:
+            if balance < 50:
                 print("Недостаточно средств.")
                 continue
             balance = balance - 50
@@ -38,7 +38,7 @@ while True:
     elif answer.lower() == "кока-кола" or answer.lower() == "кола" or answer.lower() == "кока":
         a = input("Подтверждаете оплату?(Да/Нет): ")
         if a.lower() == "да":
-            if balance <= 15:
+            if balance < 15:
                 print("Недостаточно средств.")
                 continue
             balance = balance - 15
@@ -46,7 +46,7 @@ while True:
     elif answer.lower() == "торт":
         a = input("Подтверждаете оплату?(Да/Нет): ")
         if a.lower() == "да":
-            if balance <= 35:
+            if balance < 35:
                 print("Недостаточно средств.")
                 continue
             balance = balance - 35
