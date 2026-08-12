@@ -33,8 +33,8 @@ def reset():
     stage = 1
     count_label.config(text=f"Нажатий: {count}")
     stage_label.config(text="Этап: Субханналлах!")
-button = tkinter.Button(window, text="Нажми", command=on_click)
-button.pack()
+button = tkinter.Button(window, text="Нажми", command=on_click, font=("Arial", 20))
+button.pack(pady=10)
 resetbutton = tkinter.Button(window, text="Сброс", command=reset)
-resetbutton.pack()
+resetbutton.pack(pady=50)
 window.mainloop()
